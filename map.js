@@ -3,8 +3,9 @@
 // REQS: use .map
 
 export const getCountryNames = (countries) => {
-  const countryNames = countries.map((country) => country.name);
-  return countryNames;
+  return countries.map((country) => {
+    return country.name;
+  });
 };
 
 // INPUT: the array of countries from data.js
@@ -12,8 +13,9 @@ export const getCountryNames = (countries) => {
 // REQS: use .map
 
 export const getCountryCodes = (countries) => {
-  const countryNameAndCode = countries.map((country) => [country.name, country.iso2]);
-  return countryNameAndCode;
+  return countries.map((country) => {
+    return [country.name, country.iso2];
+  });
 };
 
 // INPUT: the array of shoes from data.js
@@ -21,6 +23,7 @@ export const getCountryCodes = (countries) => {
 // REQS: use .map
 
 export const getBrands = (brands) => {
-  const brand = brands.map((brand) => brand.brand);
-  return brand;
+  return brands.map((brand) => {
+    return brand.brand;
+  });
 };
